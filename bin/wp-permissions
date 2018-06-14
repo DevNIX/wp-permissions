@@ -7,10 +7,10 @@
 # Forked by: Pablo Largo <devnix.code [at] gmail [dot] org>
 # from https://gist.github.com/Adirael/3383404
 
-WP_OWNER=$1;	# <-- wordpress owner
-WP_GROUP=$2; 	# <-- wordpress group
-WS_GROUP=$2; 	# <-- webserver group
-WP_ROOT=$3;  	# <-- wordpress root directory
+WP_OWNER=$1;	# wordpress owner
+WP_GROUP=$2; 	# wordpress group
+WS_GROUP=$2; 	# webserver group, consider refactor
+WP_ROOT=$3;  	# wordpress root directory
 
 if [ "$#" -ne "3" ]; then
 	echo -e "Incorrect number of arguments.\nUsage: wp-permissions www-data www-data ./" 1>&2;
